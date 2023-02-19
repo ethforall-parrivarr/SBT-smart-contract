@@ -38,7 +38,7 @@ contract UniversityDegree is ERC721URIStorage {
         _setTokenURI(newItemId, tokenURI);
 
         personToDegree[msg.sender] = tokenURI;
-        issuedDegree[msg.sender] = false;
+        // issuedDegree[msg.sender] = false;
 
         return newItemId;
     }
